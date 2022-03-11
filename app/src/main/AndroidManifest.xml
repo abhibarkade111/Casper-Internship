@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.artcasper">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ARTCasper">
+        <activity
+            android:name=".SafeSchoolProgramActivity"
+            android:exported="true"
+            android:label="ART Safe School"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".LeadCampusProgramActivity"
+            android:exported="true"
+            android:label="ART Lead Campus"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".UploadLocationActivity"
+            android:exported="true"
+            android:label="Request Location"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".FeedbackFormActivity"
+            android:exported="true"
+            android:label="Feedback Form"
+            android:parentActivityName=".FindNearToilet" />
+        <activity
+            android:name=".FeedbackActivity"
+            android:exported="true"
+            android:label="Feedback"
+            android:parentActivityName=".FindNearToilet" />
+        <activity
+            android:name=".ScanQrCodeActivity"
+            android:exported="true"
+            android:label="Scan QR" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_api" />
+
+        <activity
+            android:name=".FindNearToilet"
+            android:exported="true" />
+        <activity
+            android:name=".CategoryPrivate"
+            android:exported="true" />
+        <activity
+            android:name=".CategoryPublic"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
