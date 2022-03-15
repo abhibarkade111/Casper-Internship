@@ -3,8 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-android:background="@drawable/iphone_11_pro_max___4">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/base_cardview"
@@ -18,7 +17,8 @@ android:background="@drawable/iphone_11_pro_max___4">
         app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.021">
+        app:layout_constraintVertical_bias="0.021"
+        app:cardBackgroundColor="@color/primaryLightColor">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -135,7 +135,9 @@ android:background="@drawable/iphone_11_pro_max___4">
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintVertical_bias="0.021">
+        app:layout_constraintVertical_bias="0.021"
+        app:cardBackgroundColor="@color/primaryLightColor">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -251,7 +253,9 @@ android:background="@drawable/iphone_11_pro_max___4">
         app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/base_cardview2"
-        app:layout_constraintVertical_bias="0.021">
+        app:layout_constraintVertical_bias="0.021"
+        app:cardBackgroundColor="@color/primaryLightColor">
+        >
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -46,7 +46,7 @@ public class ArtKitActivity extends AppCompatActivity {
             }else{
                 TransitionManager.beginDelayedTransition(cardView,new AutoTransition());
                 hidden.setVisibility(View.VISIBLE);
-                details.setTextColor(getResources().getColor(R.color.primaryDarkColor));
+                details.setTextColor(getResources().getColor(R.color.secondaryDarkColor));
             }
         });
         details2.setOnClickListener(view -> {
@@ -57,7 +57,7 @@ public class ArtKitActivity extends AppCompatActivity {
             }else{
                 TransitionManager.beginDelayedTransition(cardview2,new AutoTransition());
                 hidden2.setVisibility(View.VISIBLE);
-                details2.setTextColor(getResources().getColor(R.color.primaryDarkColor));
+                details2.setTextColor(getResources().getColor(R.color.secondaryDarkColor));
             }
         });
         details3.setOnClickListener(view -> {
@@ -68,7 +68,7 @@ public class ArtKitActivity extends AppCompatActivity {
             }else{
                 TransitionManager.beginDelayedTransition(cardview3,new AutoTransition());
                 hidden3.setVisibility(View.VISIBLE);
-                details3.setTextColor(getResources().getColor(R.color.primaryDarkColor));
+                details3.setTextColor(getResources().getColor(R.color.secondaryDarkColor));
             }
         });
 

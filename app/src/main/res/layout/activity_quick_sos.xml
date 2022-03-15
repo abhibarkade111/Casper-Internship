@@ -7,9 +7,7 @@
     android:layout_height="fill_parent"
     android:clipToOutline="true"
     tools:context=".SOSActivity"
-    tools:targetApi="s"
-    android:background="@drawable/iphone_11_pro_max___4">
-
+    tools:targetApi="s">
     <ImageView
         android:id="@+id/rectangle_6"
         android:layout_width="wrap_content"
@@ -47,7 +45,7 @@
             android:id="@+id/sos_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Help me. I am sending my location ::"/>
+            android:text="Help me. I am sending my location :" />
 
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -60,7 +58,7 @@
         android:layout_alignBottom="@id/rectangle_6"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="-100dp"
-        android:backgroundTint="@color/primaryLightColor"
+        android:backgroundTint="@color/secondaryColor"
         android:elevation="4dp"
         android:outlineAmbientShadowColor="@color/cardview_dark_background"
         android:text="Send"
@@ -84,35 +82,6 @@
         android:outlineAmbientShadowColor="@color/cardview_dark_background"
         app:srcCompat="@drawable/ic_plus_24" />
 
-<!--    <ImageView-->
-<!--        android:id="@+id/group_3"-->
-<!--        android:layout_width="618dp"-->
-<!--        android:layout_height="406dp"-->
-<!--        android:layout_alignParentStart="true"-->
-
-<!--        android:layout_marginStart="0dp"-->
-<!--        android:layout_marginTop="-97dp"-->
-<!--        android:background="#00000000"-->
-<!--        app:srcCompat="@drawable/design2" />-->
-
-<!--    <ImageView-->
-<!--        android:id="@+id/group_4"-->
-<!--        android:layout_width="618dp"-->
-<!--        android:layout_height="406dp"-->
-<!--        android:layout_alignParentBottom="true"-->
-<!--        android:layout_marginStart="-97dp"-->
-<!--        android:layout_marginEnd="-97dp"-->
-<!--        android:layout_marginBottom="-97dp"-->
-<!--        android:background="#00000000"-->
-<!--        app:srcCompat="@drawable/design1" />-->
-
-<!--    <ImageView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_alignParentBottom="true"-->
-<!--        android:elevation="1dp"-->
-<!--        app:srcCompat="@drawable/rectangle_pop"-->
-<!--        android:layout_marginBottom="-20dp"/>-->
 
 
 </RelativeLayout>
