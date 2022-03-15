@@ -9,8 +9,7 @@
 
 <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Online_payment"
-    android:background="@drawable/red_yellow">
+    tools:context=".Online_payment">
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_shopping"

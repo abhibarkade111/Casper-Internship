@@ -8,7 +8,7 @@
     android:clipToOutline="true"
     tools:context=".EmergencyContactActivity"
     tools:targetApi="s"
-    android:background="@drawable/iphone_11_pro_max___4">
+>
 
 
 

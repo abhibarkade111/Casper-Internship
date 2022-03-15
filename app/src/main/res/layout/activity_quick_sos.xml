@@ -7,8 +7,7 @@
     android:layout_height="fill_parent"
     android:clipToOutline="true"
     tools:context=".SOSActivity"
-    tools:targetApi="s"
-    android:background="@drawable/iphone_11_pro_max___4">
+    tools:targetApi="s">
 
     <ImageView
         android:id="@+id/rectangle_6"

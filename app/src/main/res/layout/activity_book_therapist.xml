@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/iphone_11_pro_max___4"
+
     tools:context=".BookTherapistActivity">
 
     <com.google.android.material.textfield.TextInputLayout
