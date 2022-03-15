@@ -16,31 +16,46 @@
         <entry key="..\:/Android Development/ARTCasper/app/src/main/res/drawable/copy.xml" value="0.14635416666666667" />
         <entry key="..\:/Android Development/ARTCasper/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.14635416666666667" />
         <entry key="..\:/Android Development/ARTCasper/app/src/main/res/drawable/ic_baseline_arrow_right_24.xml" value="0.26615384615384613" />
+        <entry key="..\:/Android Development/ARTCasper/app/src/main/res/drawable/ic_baseline_qr_code_scanner_24.xml" value="0.2703125" />
         <entry key="..\:/Android Development/ARTCasper/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.2703125" />
         <entry key="..\:/Android Development/ARTCasper/app/src/main/res/drawable/ic_search_black_24dp.xml" value="0.14635416666666667" />
         <entry key="..\:/Android Development/ARTCasper/app/src/main/res/drawable/orange_background.xml" value="0.14635416666666667" />
         <entry key="..\:/Android Development/ARTCasper/app/src/main/res/drawable/red_backgroud.xml" value="0.14635416666666667" />
         <entry key="..\:/Android Development/ARTCasper/app/src/main/res/drawable/round_back_dark_blue1.xml" value="0.24722222222222223" />
+        <entry key="..\:/Android Development/ARTCasper/app/src/main/res/drawable/round_back_primary_2.xml" value="0.2703125" />
+        <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/activity_art_kit.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/activity_book_room.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/activity_book_therapist.xml" value="0.25416666666666665" />
         <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/activity_booking.xml" value="0.11614583333333334" />
         <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/activity_category_private.xml" value="0.25416666666666665" />
         <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/activity_category_public.xml" value="0.2" />
+        <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/activity_dialog.xml" value="0.25416666666666665" />
         <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/activity_emergency_contact.xml" value="0.13020833333333334" />
-        <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/activity_feedback.xml" value="0.1265625" />
-        <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/activity_feedback_form.xml" value="0.264" />
+        <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/activity_feedback.xml" value="0.264" />
+        <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/activity_feedback_form.xml" value="0.4" />
         <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/activity_find_near_toilet.xml" value="0.2" />
+        <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/activity_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/activity_institute_report.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/activity_institutional_bus.xml" value="0.25416666666666665" />
         <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/activity_lead_campus_program.xml" value="0.25416666666666665" />
         <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/activity_list_dialog.xml" value="0.13020833333333334" />
         <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/activity_main2.xml" value="0.264" />
         <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/activity_meet_aid.xml" value="0.13020833333333334" />
-        <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/activity_online_payment.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/activity_number.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/activity_online_payment.xml" value="0.264" />
         <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/activity_otpverification.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/activity_profile.xml" value="0.25416666666666665" />
         <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/activity_quick_sos.xml" value="0.2" />
         <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/activity_register.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/activity_report_option.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/activity_reports.xml" value="0.25416666666666665" />
+        <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/activity_rewards_scratch.xml" value="0.25416666666666665" />
         <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/activity_room_booking.xml" value="0.13020833333333334" />
         <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/activity_safe_school_program.xml" value="0.25416666666666665" />
         <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/activity_scan_qr_code.xml" value="0.1" />
         <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/activity_sign_in.xml" value="0.264" />
+        <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/activity_therapist.xml" value="0.25416666666666665" />
         <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/activity_upload_location.xml" value="0.25416666666666665" />
         <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/bookroom_activity.xml" value="0.25416666666666665" />
         <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/content_map.xml" value="0.152" />

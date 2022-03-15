@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/red_yellow"
     tools:context=".Rewards_Scratch">
 
     <TextView
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/title"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="57dp"
+        android:layout_marginTop="20dp"
         android:text="Rewards"
         android:textAlignment="center"
         android:textSize="30dp"
@@ -80,7 +79,7 @@
                 <ImageView
                     android:layout_width="140dp"
                     android:layout_height="140dp"
-                    android:src="@drawable/scratch"/>
+                    android:src="@drawable/trophy"/>
 
             </LinearLayout>
 
@@ -174,16 +173,21 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:src="@drawable/oyo"/>
+
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btn"
-                    android:layout_width="80dp"
+                    android:id="@+id/btn_shopping"
+                    android:layout_width="wrap_content"
                     android:layout_height="30dp"
-                    android:background="@color/secondaryColor"
-                    android:text="Reedem"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/round_back_primary_2"
+                    android:text="Redeem"
                     android:textAllCaps="false"
                     android:textColor="#FFFFFF"
-                    android:textSize="12sp"
-                    />
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.491"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
 
             </LinearLayout>
