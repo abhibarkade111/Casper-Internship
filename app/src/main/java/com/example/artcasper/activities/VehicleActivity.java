@@ -1,12 +1,19 @@
 package com.example.artcasper.activities;
 
 import android.Manifest;
+import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.Spinner;
+import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -41,6 +48,8 @@ public class VehicleActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     SupportMapFragment smf;
     FusedLocationProviderClient client;
+    LinearLayout institutionalbus;
+    AlertDialog.Builder builder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +60,8 @@ public class VehicleActivity extends AppCompatActivity {
         vehicleinfoArrayList = initvehicles();
         vehicleInfoRecyclerAdapter = new VehicleInfoRecyclerAdapter(vehicleinfoArrayList, this);
         recyclerView = findViewById(R.id.vh);
+        builder = new AlertDialog.Builder(this);
+        institutionalbus = findViewById(R.id.institutionalbus);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, RecyclerView.VERTICAL, false);
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setAdapter(vehicleInfoRecyclerAdapter);
@@ -75,9 +86,41 @@ public class VehicleActivity extends AppCompatActivity {
                     }
 
                 }).check();
+        institutionalbus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                LayoutInflater li = LayoutInflater.from(VehicleActivity.this);
+                View promptsView = li.inflate(R.layout.prompt, null);
+                AlertDialog.Builder aBuilder = new AlertDialog.Builder(VehicleActivity.this);
+                aBuilder.setView(promptsView);
+
+                final EditText userInput = promptsView.findViewById(R.id.userdialog);
+
+                aBuilder.setCancelable(false)
+                        .setPositiveButton("ok", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                String roll_no = userInput.getText().toString();
+                                if (roll_no.equals("2053008")) {
+                                    Toast.makeText(VehicleActivity.this, "Welcome", Toast.LENGTH_SHORT).show();
+                                } else {
+                                    Toast.makeText(VehicleActivity.this, "Not Registered", Toast.LENGTH_SHORT).show();
+                                }
+                            }
+                        })
+                        .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.cancel();
+                            }
+                        });
+                AlertDialog alertDialog = aBuilder.create();
+                alertDialog.show();
+
+            }
+        });
 
     }
-
 
 
     public void getmylocation() {
@@ -121,6 +164,7 @@ public class VehicleActivity extends AppCompatActivity {
             }
         });
     }
+
     private ArrayList<vehicle> initvehicles() {
         ArrayList<vehicle> list = new ArrayList<>();
 
