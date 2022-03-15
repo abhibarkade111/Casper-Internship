@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/iphone_11_pro_max___4"
+    tools:context=".BookTherapistActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:boxBackgroundColor="@color/primaryTextColor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:layout_margin="30dp"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        app:boxBackgroundColor="@color/primaryTextColor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/date_selection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date"
+        android:layout_margin="30dp"
+        app:layout_constraintTop_toBottomOf="@id/address"
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/ic_date"
+        app:boxBackgroundColor="@color/primaryTextColor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/date_picker_actions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/time_selection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Time Slot"
+        android:layout_margin="30dp"
+        app:layout_constraintTop_toBottomOf="@id/date_selection"
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/ic_pick_time"
+        app:boxBackgroundColor="@color/primaryTextColor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/time_picker_actions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Complaint_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Problem you are facing?"
+        android:layout_margin="30dp"
+        app:layout_constraintTop_toBottomOf="@id/time_selection"
+        app:boxBackgroundColor="@color/primaryTextColor"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:inputType="textMultiLine" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/reportButton"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/primaryLightColor"
+        android:elevation="10dp"
+        android:outlineAmbientShadowColor="@color/cardview_dark_background"
+        android:text="Book"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/cancelButton"
+        app:layout_constraintTop_toBottomOf="@id/Complaint_details" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/primaryLightColor"
+        android:elevation="10dp"
+        android:outlineAmbientShadowColor="@color/cardview_dark_background"
+        android:text="Cancel"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/reportButton"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Complaint_details" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

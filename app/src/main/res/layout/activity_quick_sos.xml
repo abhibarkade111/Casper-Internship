@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/iphone_11_p"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipToOutline="true"
+    tools:context=".SOSActivity"
+    tools:targetApi="s"
+    android:background="@drawable/iphone_11_pro_max___4">
+
+    <ImageView
+        android:id="@+id/rectangle_6"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="312dp"
+        android:layout_marginEnd="15dp"
+
+        android:elevation="4dp"
+        android:outlineAmbientShadowColor="@color/secondaryTextColor"
+        android:outlineSpotShadowColor="@color/secondaryTextColor" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextField"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="357dp"
+        android:layout_height="69dp"
+        android:layout_alignTop="@id/rectangle_6"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="45dp"
+        android:elevation="5dp"
+        android:hint="@string/emergency_message"
+        android:outlineAmbientShadowColor="@color/cardview_dark_background"
+        app:boxStrokeColor="@color/secondaryTextColor"
+        app:boxStrokeWidth="2dp"
+        app:counterTextColor="@color/secondaryTextColor"
+        app:hintTextColor="@color/secondaryTextColor">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/sos_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Help me. I am sending my location ::"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/elevatedButton"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@id/rectangle_6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-100dp"
+        android:backgroundTint="@color/primaryLightColor"
+        android:elevation="4dp"
+        android:outlineAmbientShadowColor="@color/cardview_dark_background"
+        android:text="Send"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_action_button"
+        style="@style/Widget.Material3.FloatingActionButton.Large.Surface"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="25dp"
+        android:background="@color/primaryTextColor"
+        android:elevation="3dp"
+        android:outlineAmbientShadowColor="@color/cardview_dark_background"
+        app:srcCompat="@drawable/ic_plus_24" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/group_3"-->
+<!--        android:layout_width="618dp"-->
+<!--        android:layout_height="406dp"-->
+<!--        android:layout_alignParentStart="true"-->
+
+<!--        android:layout_marginStart="0dp"-->
+<!--        android:layout_marginTop="-97dp"-->
+<!--        android:background="#00000000"-->
+<!--        app:srcCompat="@drawable/design2" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/group_4"-->
+<!--        android:layout_width="618dp"-->
+<!--        android:layout_height="406dp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginStart="-97dp"-->
+<!--        android:layout_marginEnd="-97dp"-->
+<!--        android:layout_marginBottom="-97dp"-->
+<!--        android:background="#00000000"-->
+<!--        app:srcCompat="@drawable/design1" />-->
+
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:elevation="1dp"-->
+<!--        app:srcCompat="@drawable/rectangle_pop"-->
+<!--        android:layout_marginBottom="-20dp"/>-->
+
+
+</RelativeLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/iphone_11_p"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipToOutline="true"
+    tools:context=".SOSelectionActivity">
+
+
+    <ImageButton
+        android:id="@+id/sos_but"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="378dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:outlineSpotShadowColor="@color/cardview_dark_background"
+        android:src="@drawable/button1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/sos_but"
+        android:layout_alignTop="@id/sos_but"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="37dp"
+        android:text="Quick SOS"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/emergency"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:layout_marginBottom="252dp"
+        android:backgroundTint="@color/primaryTextColor"
+        android:clickable="true"
+        android:focusable="true"
+        android:outlineAmbientShadowColor="@color/cardview_dark_background"
+        android:src="@drawable/button2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/emergency"
+        android:layout_alignTop="@id/emergency"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="37dp"
+        android:text="Emergency Contact Services"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/complaint"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="126dp"
+        android:clickable="true"
+        android:drawableEnd="@drawable/ic_arrow"
+        android:focusable="true"
+        android:outlineSpotShadowColor="@color/secondaryTextColor"
+        android:src="@drawable/button3" />
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/complaint"
+            android:layout_alignTop="@id/complaint"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="37dp"
+            android:text="File a Complaint "
+            android:textColor="@color/primaryTextColor"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/sos_but"
+        android:layout_alignEnd="@id/sos_but"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="39dp"
+        android:src="@drawable/ic_arrow" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/emergency"
+        android:layout_alignEnd="@id/emergency"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="39dp"
+        android:src="@drawable/ic_arrow" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/complaint"
+        android:layout_alignEnd="@id/complaint"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="39dp"
+        android:src="@drawable/ic_arrow" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="45dp"
+
+        android:text="FOR YOUR"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="104dp"
+
+        android:text="ALWAYS THERE"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="53dp"
+
+        android:text="SAFETY"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    />
+
+
+</RelativeLayout>
+

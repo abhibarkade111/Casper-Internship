@@ -1,5 +1,37 @@
 <resources>
     <string name="app_name">ART Casper</string>
-    <string name="google_maps_api">AIzaSyAfGZXdg5XsPiMztn4CsvyvsZVPR4S5pw0</string>
 
+    <string name="google_maps_api">AIzaSyAfGZXdg5XsPiMztn4CsvyvsZVPR4S5pw0</string>
+    <string-array name="vehichle_type">
+        <item>Public Bus</item>
+        <item>City cab</item>
+        <item>Auto</item>
+        <item>Bike Ride</item>
+        <item>Share Cab</item>
+        <item>Outstation Rides</item>
+
+    </string-array>
+
+    <string name="emergency_message">Emergency Message</string>
+    <string name="warning">Warning</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="warning_message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu erat tincidunt lacus fermentum rutrum.</string>
+    <string name="more_details"><u>More Details</u></string>
+    <string name="city">City</string>
+    <string-array name="Therapist_Category">
+        <item>Depression therapist</item>
+        <item>Marriage and family counselor</item>
+        <item>Addiction therapist</item>
+        <item>Behavioral therapist</item>
+        <item>Divorce therapist</item>
+        <item>Child therapist</item>
+        <item>Eating disorder therapist</item>
+        <item>Exercise therapist</item>
+    </string-array>
+    <string-array name="Report_Category">
+        <item>Report Harassment to Police Station</item>
+        <item>Report Harassment to Institute/Organization</item>
+        <item>Report Domestic Violence</item>
+    </string-array>
 </resources>
