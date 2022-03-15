@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/iphone_11_pro_max___4"
     tools:context=".ComplaintReportActivity">
 
     <com.google.android.material.textfield.TextInputLayout
@@ -17,8 +16,12 @@
         android:hint="Name"
         app:boxStrokeColor="@color/secondaryColor"
         app:layout_constraintTop_toTopOf="parent"
-        app:boxBackgroundColor="@color/primaryTextColor">
-
+        android:background="@drawable/edittext_background"
+        app:boxStrokeWidth="0dp"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusTopStart="15dp">
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -33,8 +36,12 @@
         android:hint="Address"
         app:boxStrokeColor="@color/secondaryColor"
         app:layout_constraintTop_toBottomOf="@id/name"
-        app:boxBackgroundColor="@color/primaryTextColor">
-
+        android:background="@drawable/edittext_background"
+        app:boxStrokeWidth="0dp"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusTopStart="15dp">
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -47,14 +54,18 @@
         android:layout_margin="30dp"
         android:hint="Complaint Details"
         app:boxStrokeColor="@color/secondaryColor"
-        app:layout_constraintTop_toBottomOf="@id/address">
+        app:layout_constraintTop_toBottomOf="@id/address"
+        android:background="@drawable/edittext_background"
+        app:boxStrokeWidth="0dp"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusTopStart="15dp">>
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="120dp"
-            android:inputType="textMultiLine"
-            app:boxBackgroundColor="@color/primaryTextColor"
-            android:backgroundTint="@color/primaryTextColor"/>
+            android:inputType="textMultiLine" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -64,7 +75,7 @@
         android:layout_width="wrap_content"
         android:layout_height="60dp"
         android:layout_marginTop="30dp"
-        android:backgroundTint="@color/primaryLightColor"
+        android:backgroundTint="@color/secondaryColor"
         android:elevation="10dp"
         android:outlineAmbientShadowColor="@color/cardview_dark_background"
         android:text="Complaint"
@@ -81,7 +92,7 @@
         android:layout_width="150dp"
         android:layout_height="60dp"
         android:layout_marginTop="30dp"
-        android:backgroundTint="@color/primaryLightColor"
+        android:backgroundTint="@color/secondaryColor"
         android:elevation="10dp"
         android:outlineAmbientShadowColor="@color/cardview_dark_background"
         android:text="Cancel"

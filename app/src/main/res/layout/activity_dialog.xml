@@ -8,7 +8,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:background="@color/primaryColor">
+        android:background="@color/primaryDarkColor">
 
         <ImageView
             android:layout_width="50dp"
@@ -49,8 +49,8 @@
                 android:id="@+id/buttonOk"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:layout_alignParentEnd="@id/buttonOk"
                 android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="@id/buttonOk"
                 android:layout_marginTop="15dp"
                 android:background="@color/primaryColor"
                 android:text="@string/ok"
