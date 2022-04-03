@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<!--    <com.afdhal_fa.imageslider.ImageSlider-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="350dp"-->
+<!--        app:iss_auto_cycle="true"-->
+<!--        app:iss_delay="0"-->
+<!--        app:iss_period="500"-->
+<!--        android:id="@+id/imageSlide"/>-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/travel_solo" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        app:cardElevation="50dp"
+        android:outlineSpotShadowColor="@color/cardview_dark_background"
+        tools:targetApi="p">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <Spinner
+                android:id="@+id/spinner_destination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:autofillHints="Destination"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="2dp"
+                android:gravity="center">
+                <EditText
+                    android:id="@+id/start_date"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/start_date"
+                    android:textColorHint="@color/primaryLightColor"
+                    android:drawableRight="@drawable/ic_date"
+                    android:padding="5dp"
+                    android:clickable="true"
+                    android:focusable="true"/>
+                <EditText
+                    android:id="@+id/end_date"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/end_date"
+                    android:textColorHint="@color/primaryLightColor"
+                    android:padding="5dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:drawableEnd="@drawable/ic_date"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/book_now"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/book_now"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SequoiaPink"
+        android:textStyle="bold"
+        android:textColor="@color/secondaryColor"
+        android:textSize="35sp"
+        android:textAlignment="center"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_content"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:padding="5dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Liesure Wonders"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+    android:layout_marginTop="10dp"
+        android:id="@+id/city_recycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Work and Explore"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/city_recycler2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guest Review"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:padding="5dp"
+        android:layout_marginTop="20dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+android:layout_marginTop="5dp"
+        android:id="@+id/city_recycler3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>
+</ScrollView>
