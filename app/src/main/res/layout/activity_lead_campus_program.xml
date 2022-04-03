@@ -39,7 +39,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:gravity="center"
-                        android:text="Welcome to ART Lead Campus Program"
+                        android:text="Welcome to Lead Campus Program"
                         android:textColor="@color/red_main"
                         android:textSize="24sp"
                         android:textStyle="bold" />

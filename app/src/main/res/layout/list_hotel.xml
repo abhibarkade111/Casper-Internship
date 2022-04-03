@@ -8,9 +8,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
         android:background="@drawable/round_back_dark_blue1"
         android:orientation="vertical">
         <androidx.cardview.widget.CardView
@@ -60,7 +60,7 @@
             android:layout_marginRight="60dp"
             android:text="View"
             android:textAlignment="center"
-            android:backgroundTint="#FE266F"/>
+            android:backgroundTint="@color/primaryColor"/>
     </LinearLayout>
 
 </LinearLayout>

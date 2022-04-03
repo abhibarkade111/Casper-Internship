@@ -21,7 +21,7 @@
                 android:layout_marginTop="10dp"
                 android:gravity="center"
                 android:padding="10dp"
-                android:text="Request For ART Service"
+                android:text="Request For Service"
                 android:textColor="@color/red_main"
                 android:textSize="24sp"
                 android:textStyle="bold" />

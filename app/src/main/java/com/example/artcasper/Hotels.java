@@ -17,7 +17,7 @@ public class Hotels extends AppCompatActivity {
 
         rec=findViewById(R.id.recycler);
         rec.setLayoutManager(new LinearLayoutManager(this));
-        String[] name={"Zostel","Hotel"};
+        String[] name={"Hotel Weekend","Hotel Awesome"};
         rec.setAdapter(new ListAdapter(name));
     }
 }

@@ -44,7 +44,7 @@
                 android:layout_marginBottom="20dp"
                 android:elevation="3dp"
                 android:ems="10"
-                android:hint="Search For ART Services"
+                android:hint="Search For Services"
                 android:inputType="textPersonName"
                 android:paddingStart="20dp"
                 android:paddingEnd="20dp"
@@ -79,7 +79,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="ART Public \nToilet"
+                        android:text="Public Toilet"
                         android:gravity="center"
                         android:textStyle="bold"
                         android:textSize="20sp"
@@ -106,7 +106,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="ART Private \nToilet"
+                        android:text="Private Toilet"
                         android:textSize="20sp"
                         android:padding="3dp"
                         android:textStyle="bold" />
@@ -197,7 +197,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="ART Safe \nSchool"
+                        android:text="Safe School"
                         android:gravity="center"
                         android:textStyle="bold"
                         android:textSize="20sp"

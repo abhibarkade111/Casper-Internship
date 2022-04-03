@@ -39,7 +39,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
                         android:gravity="center"
-                        android:text="Welcome to ART Safe Shool Program"
+                        android:text="Welcome to Safe Shool Program"
                         android:textColor="@color/red_main"
                         android:textSize="24sp"
                         android:textStyle="bold" />
