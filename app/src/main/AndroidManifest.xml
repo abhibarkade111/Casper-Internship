@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ARTCasper">
         <activity
-            android:name=".MainActivity2"
+            android:name=".SignInActivity"
             android:exported="true">
 
         </activity>
@@ -29,7 +29,7 @@
             android:label="Select Hotel"
             />
         <activity
-            android:name=".cust_register"
+            android:name=".CustomerRegisteration"
             android:exported="true" />
         <activity
             android:name=".hotel_name"
@@ -38,7 +38,7 @@
             android:name=".OTPVerification"
             android:exported="true" />
         <activity
-            android:name=".SignInActivity"
+            android:name=".MainActivity2"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

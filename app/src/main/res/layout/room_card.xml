@@ -224,13 +224,15 @@
             </LinearLayout>
             </HorizontalScrollView>
             <Button
-                android:id="@+id/room_book"
+                android:id="@+id/room_book_"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Book"
                 android:textStyle="bold"
                 android:padding="5dp"
-                android:layout_margin="5dp"/>
+                android:layout_margin="5dp"
+                android:clickable="true"
+                android:focusable="true" />
         </LinearLayout>
 
         

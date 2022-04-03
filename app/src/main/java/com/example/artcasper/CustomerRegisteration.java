@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.ms.square.android.expandabletextview.ExpandableTextView;
 
-public class cust_register extends AppCompatActivity {
+public class CustomerRegisteration extends AppCompatActivity {
     ExpandableTextView etxt1,etxt2,etxt3;
     Button b1,b2,b3;
     Dialog d1,d2,d3;

@@ -16,27 +16,32 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-//import com.afdhal_fa.imageslider.ImageSlider;
-//import com.afdhal_fa.imageslider.model.SlideUIModel;
 import com.example.artcasper.adapter.HomeAdapter;
 import com.example.artcasper.adapter.ReviewAdapter;
+import com.example.artcasper.data.HomeData;
 
 import java.util.ArrayList;
 import java.util.Calendar;
 
+//import com.afdhal_fa.imageslider.ImageSlider;
+//import com.afdhal_fa.imageslider.model.SlideUIModel;
+
 public class HomeActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener,DatePickerDialog.OnDateSetListener {
     RecyclerView recyclerView;
     ArrayList<String> source;
+    ArrayList<HomeData> imageid, work;
     RecyclerView.LayoutManager RecyclerViewLayoutManager;
     RecyclerView.Adapter adapter;
     LinearLayoutManager HorizontalLayout;
     EditText startDateButton, endDateButton;
     Button booknowButton;
     public String start,end;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
+
         Spinner spinner=findViewById(R.id.spinner_destination);
         spinner.setOnItemSelectedListener(this);
         ArrayAdapter<CharSequence> arrayAdapter= ArrayAdapter.createFromResource(this,R.array.Destination, android.R.layout.simple_spinner_item);
@@ -47,13 +52,8 @@ public class HomeActivity extends AppCompatActivity implements AdapterView.OnIte
         booknowButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               /*Intent intent = new Intent(getApplicationContext(),RoomSelectionActivity.class);
-                intent.putExtra("start_date",start);
-                intent.putExtra("end_date",end);
-                startActivity(intent);*/
-                Intent i=new Intent(HomeActivity.this,Hotels.class);
-                startActivity(i);
-
+                Intent intent = new Intent(getApplicationContext(),Hotels.class);
+                startActivity(intent);
             }
         });
 
@@ -78,26 +78,25 @@ public class HomeActivity extends AppCompatActivity implements AdapterView.OnIte
 //        imageList.add(new SlideUIModel("https://s.id/Ccoeo","Blackpink"));
 //        imageList.add(new SlideUIModel("https://s.id/CcouZ","Blackpink"));
 //        imageList.add(new SlideUIModel("https://bit.ly/3fLJf72", "The population of elephants is decreasing in the world."));
-//
 //        ImageSlider imageSlide = null;
 //        imageSlide.setImageList(imageList);
-
+        AddworkItemsToRecyclerViewArrayList();
         recyclerView = (RecyclerView) findViewById(R.id.city_recycler);
         RecyclerViewLayoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(RecyclerViewLayoutManager);
         AddItemsToRecyclerViewArrayList();
-        adapter = new HomeAdapter(source);
+        adapter = new HomeAdapter(work,getApplicationContext());
         HorizontalLayout
                 = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         recyclerView.setLayoutManager(HorizontalLayout);
         recyclerView.setAdapter(adapter);
 
-
+        AddImageItemsToRecyclerViewArrayList();
         recyclerView = (RecyclerView) findViewById(R.id.city_recycler2);
         RecyclerViewLayoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(RecyclerViewLayoutManager);
         AddItemsToRecyclerViewArrayList();
-        adapter = new HomeAdapter(source);
+        adapter = new HomeAdapter(imageid,getApplicationContext());
         HorizontalLayout
                 = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         recyclerView.setLayoutManager(HorizontalLayout);
@@ -107,6 +106,7 @@ public class HomeActivity extends AppCompatActivity implements AdapterView.OnIte
         RecyclerViewLayoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(RecyclerViewLayoutManager);
         AddItemsToRecyclerViewArrayList();
+        AddworkItemsToRecyclerViewArrayList();
         adapter = new ReviewAdapter(source);
         HorizontalLayout
                 = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
@@ -125,6 +125,31 @@ public class HomeActivity extends AppCompatActivity implements AdapterView.OnIte
         source.add("Bengaluru");
         source.add("Kolkata");
         source.add("Jaipur");
+    }
+    public void AddworkItemsToRecyclerViewArrayList()
+    {
+        // Adding items to ArrayList
+        work = new ArrayList<HomeData>();
+        work.add(new HomeData(R.drawable.agra,"Agra"));
+        work.add(new HomeData(R.drawable.goa,"Goa"));
+        work.add(new HomeData(R.drawable.jaipur,"Jaipur"));
+        work.add(new HomeData(R.drawable.kanyakumari,"Kanyakumari"));
+        work.add(new HomeData(R.drawable.kochi,"Kochi"));
+        work.add(new HomeData(R.drawable.manali,"Manali"));
+        work.add(new HomeData(R.drawable.mysore,"Mysore"));
+        work.add(new HomeData(R.drawable.sikkim,"Sikkim"));
+    }
+    public void AddImageItemsToRecyclerViewArrayList()
+    {
+        // Adding items to ArrayList
+        imageid = new ArrayList<HomeData>();
+        imageid.add(new HomeData(R.drawable.mumbai,"Mumbai"));
+        imageid.add(new HomeData(R.drawable.kolkata,"Kolkata"));
+        imageid.add(new HomeData(R.drawable.delhi,"Delhi"));
+        imageid.add(new HomeData(R.drawable.pune,"Pune"));
+        imageid.add(new HomeData(R.drawable.banglore,"Banglore"));
+        imageid.add(new HomeData(R.drawable.chennai,"Chennai"));
+        imageid.add(new HomeData(R.drawable.hyderabad,"Hyderabad"));
     }
     private void showDatePickerDialog1(){
         DatePickerDialog datePickerDialog = new DatePickerDialog(this, this::onDateSet1, Calendar.getInstance().get(Calendar.YEAR),

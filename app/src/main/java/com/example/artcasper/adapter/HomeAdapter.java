@@ -1,5 +1,7 @@
 package com.example.artcasper.adapter;
 
+import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,13 +12,16 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.artcasper.R;
+import com.example.artcasper.data.HomeData;
 
 import java.util.List;
 
 public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.HomeViewHolder> {
-    private List<String> data;
-    public HomeAdapter(List<String> list){
+    private List<HomeData> data;
+    Context context;
+    public HomeAdapter(List<HomeData> list,Context context){
         this.data=list;
+        this.context=context;
     }
     @NonNull
     @Override
@@ -28,12 +33,16 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.HomeViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull HomeViewHolder holder, int position) {
-        holder.text.setText(data.get(position));
+        HomeData hdata = data.get(position);
+        holder.text.setText(hdata.getName());
+
+        holder.image.setImageDrawable(context.getResources().getDrawable(hdata.imageId));
     }
 
     @Override
     public int getItemCount() {
-        return data.size();
+        return data == null? 0:data.size();
+//
     }
 
     public class HomeViewHolder extends RecyclerView.ViewHolder{

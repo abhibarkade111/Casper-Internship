@@ -40,11 +40,11 @@ public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.RoomViewHolder
         public RoomViewHolder(@NonNull View itemview){
             super(itemview);
             textView= itemview.findViewById(R.id.room_type);
-            btn=itemview.findViewById(R.id.book_room);
+            btn=itemview.findViewById(R.id.room_book_);
             btn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent i=new Intent(v.getContext(), cust_register.class);
+                    Intent i=new Intent(v.getContext(), CustomerRegisteration.class);
                     v.getContext().startActivity(i);
                 }
             });

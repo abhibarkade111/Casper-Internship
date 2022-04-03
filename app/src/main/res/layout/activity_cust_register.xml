@@ -3,7 +3,7 @@
     android:layout_height="match_parent"
     xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".cust_register">
+    tools:context=".CustomerRegisteration">
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -208,8 +208,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:layout_marginTop="960dp"
             android:layout_marginLeft="20dp"
+            android:layout_marginTop="960dp"
             android:text="Summary"
             android:textSize="20dp"
             android:textStyle="bold" />
@@ -232,6 +232,7 @@
                 android:textStyle="bold" />
 
             <LinearLayout
+                android:id="@+id/hotel_desc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
@@ -265,7 +266,8 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:id="@+id/tax_section">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -273,35 +275,46 @@
                     android:layout_marginLeft="20dp"
                     android:text="Tax"
                     android:textStyle="bold"
-
-                    expandableTextView:layout_constraintStart_toStartOf="parent" />
+                    expandableTextView:layout_constraintTop_toBottomOf="@id/hotel_desc"
+                    expandableTextView:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="NotSibling" />
 
                 <TextView
+                    android:textAlignment="textEnd"
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:layout_marginRight="20dp"
                     android:text="Price"
-                    expandableTextView:layout_constraintEnd_toEndOf="parent" />
+                    expandableTextView:layout_constraintTop_toBottomOf="@id/hotel_desc"
+                    expandableTextView:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="NotSibling" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/total_tax"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <TextView
+                    android:id="@+id/tax"
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:layout_marginLeft="20dp"
                     android:text="Total(tax incl.)"
+                    expandableTextView:layout_constraintTop_toBottomOf="@id/tax_section"
                     android:textStyle="bold"
-                    expandableTextView:layout_constraintStart_toStartOf="parent" />
+                    expandableTextView:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="NotSibling" />
 
                 <TextView
+                    android:id="@+id/tax_price"
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:layout_marginRight="20dp"
                     android:text="Price"
-                    expandableTextView:layout_constraintEnd_toEndOf="parent" />
+                    expandableTextView:layout_constraintTop_toBottomOf="@id/tax_section"
+                    expandableTextView:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="NotSibling" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -314,15 +327,18 @@
                     android:layout_marginLeft="20dp"
                     android:text="Payable Now"
                     android:textStyle="bold"
-
-                    expandableTextView:layout_constraintStart_toStartOf="parent" />
+                    expandableTextView:layout_constraintTop_toBottomOf="@id/total_tax"
+                    expandableTextView:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="NotSibling" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:layout_marginRight="20dp"
                     android:text="Price"
-                    expandableTextView:layout_constraintEnd_toEndOf="parent" />
+                    expandableTextView:layout_constraintTop_toBottomOf="@id/total_tax"
+                    expandableTextView:layout_constraintEnd_toEndOf="parent"
+                    tools:ignore="NotSibling" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <CheckBox
@@ -334,18 +350,14 @@
                 android:justificationMode="inter_word"
                 android:text="I acknowledge and accept the terms and conditions mentioned in the Property Policy and Cancellation Policy." />
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <Button
-                    android:layout_width="100dp"
-                    android:layout_height="40dp"
-                    android:text="Reserve"
-                    android:textAlignment="center"
-                    expandableTextView:layout_constraintEnd_toEndOf="parent"
-                    expandableTextView:layout_constraintStart_toStartOf="parent" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reserve"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:layout_marginBottom="40dp"/>
         </LinearLayout>
 
     </RelativeLayout>

@@ -29,9 +29,8 @@ public class RoomSelectionActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rooms);
-        Intent intent=getIntent();
-        start=intent.getStringExtra("start_date");
-        end=intent.getStringExtra("end_date");
+//        start=intent.getStringExtra("start_date");
+//        end=intent.getStringExtra("end_date");
 
         covidbutton=findViewById(R.id.covid_policy);
         propertybutton=findViewById(R.id.proprty_policy);
