@@ -12,13 +12,48 @@
 
     </string-array>
 
+    <string name="city">City</string>
+    <string name="book_now">BOOK NOW</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="text_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="locker">Locker</string>
+    <string name="laundry_extra">Laundry (Extra)</string>
+    <string name="free_wifi">Free Wifi</string>
+    <string name="warm_water">Warm water</string>
+    <string name="bedside_lamp">Bedside lamp</string>
+    <string name="shower">Shower</string>
+    <string name="card_payment_naccpeted">Card payment \naccpeted</string>
+    <string name="extra_bed_on_n_request">Extra Bed on\n Request</string>
+    <string name="common_television">Common\nTelevision</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="a_c_available">A/C available</string>
+    <string name="extra_storage_n_facility">Extra Storage\n facility</string>
+    <string name="_24_7_reception">24/7 reception</string>
+    <string name="linen_included">Linen included</string>
+    <string name="hangout_area">Hangout area</string>
+    <string name="dining_facility">Dining facility</string>
+    <string name="gaming_activities">Gaming\nactivities</string>
+    <string-array name="Destination">
+        <item>Mumbai</item>
+        <item>Pune</item>
+        <item>Bengaluru</item>
+        <item>Mysore</item>
+        <item>Ooty</item>
+        <item>Ahmedabad</item>
+        <item>Delhi</item>
+        <item>Kolkata</item>
+    </string-array>
+    <string name="Covid_policy">-Please ensure you have read the health and travel advisory issued by your destination state. \n\n-This hostel follows universal hygiene guidelines and a strict sanitisation protocol. Moreover, travellers and staff regularly undergo temperature checks to curtail any health lapses. \n\n-While most staff members stay at the hostel itself, outsider staff undergo a strict thermal check and periodic testing regime. \n\n-Travellers are requested to sanitise their bags and any outside materials (parcels, shoes, etc.) while entering the hostel premises. \n\n-At this hostel, we outsource meals from a trusted partner. Travellers can opt for up to three meals a day by contacting the hostel reception.</string>
+    <string name="property_policy">-Guests are required to pay a 21% advance at the time of booking itself.\n\n-We strictly DO NOT allow a group of more than 8 people. In case of a group of 4 or more, you might be purposefully allotted different dorm rooms. Further, if the group behaviour is deemed unfit at the property, the Zostel Property Manager, upon subjective evaluation, retains the full right to take required action which may also result in an on-spot cancellation without refunds.\n\n-Children below 18 years of age are not permitted entry/stay at any of our hostels, with or without guardians. We do not recommend families.\n\n-Our standard check-in time is 12 PM and the standard check-out time is 10 AM.\n\n-We only accept a government ID as valid identification proof. No local IDs shall be accepted at the time of check-in.\n\n-Guests are not permitted to bring outsiders inside the hostel campus.\n\n-We believe in self-help and do not provide luggage assistance or room services.\n\n-Drugs and any substance abuse is strictly banned inside and around the property.\n\n-Alcohol consumption is strictly prohibited in and around the property premises.\n\n-Right to admission reserved.\n\n<b>Important Note:</b> According to the rules laid down by the Aurangabad police, local vehicles are not permitted to park within the hostel premises. This includes vehicles with number plates starting with ‘MH20’ &amp; taxi passing vehicles (white letters on yellow plate). However, self-driven vehicles (yellow letters on black plate) are permitted to park.</string>
+    <string name="cancellation_policy">We understand that sometimes plans change. Hence, to make it light on your pocket, we are only charging a 21% advance, which is on a non-refundable basis.\n\n<b>NOTE:</b>\n-21% advance payment is non-refundable at all times, as stated above.\n\n-If you have paid any amount over this 21%, it stands applicable for a credit only if the cancellation is informed 7 days or more in advance. You will be able to avail the credited amount for any future booking at any of our properties.\n\n-If informed within 7 days of the standard check-in time (12 pm), the amount shall be adjusted against the cancellation fee.</string>
     <string name="emergency_message">Emergency Message</string>
     <string name="warning">Warning</string>
     <string name="ok">Ok</string>
     <string name="cancel">Cancel</string>
     <string name="warning_message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu erat tincidunt lacus fermentum rutrum.</string>
     <string name="more_details"><u>More Details</u></string>
-    <string name="city">City</string>
+
     <string-array name="Therapist_Category">
         <item>Depression therapist</item>
         <item>Marriage and family counselor</item>

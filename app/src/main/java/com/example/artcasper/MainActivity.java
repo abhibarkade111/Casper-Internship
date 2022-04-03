@@ -22,10 +22,10 @@ public class MainActivity extends AppCompatActivity {
         upload_location = findViewById(R.id.upload_location);
         safe_school  =findViewById(R.id.safe_school);
         lead_campus  =findViewById(R.id.lead_campus);
-        HomeUseName = findViewById(R.id.homeUserName);
+
         SharedPreferences preferences = getSharedPreferences("ART",MODE_PRIVATE);
         String UserName = preferences.getString("UserName","User");
-        HomeUseName.setText(UserName);
+
         publicMain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

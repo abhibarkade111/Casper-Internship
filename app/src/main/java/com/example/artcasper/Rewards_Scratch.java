@@ -38,16 +38,16 @@ public class Rewards_Scratch extends AppCompatActivity {
             }
         });
         l1=findViewById(R.id.l1);
-        btn=findViewById(R.id.btn);
+        //btn=findViewById(R.id.btn);
         l2=findViewById(R.id.dominos);
-        l1.setOnClickListener(new View.OnClickListener() {
+        /*l1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 List_Dialog l=new List_Dialog();
                 l.show(getSupportFragmentManager(),"List Dialog");
             }
         });
-
+*/
         l2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

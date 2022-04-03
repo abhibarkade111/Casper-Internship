@@ -14,6 +14,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.FirebaseException;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthProvider;
 
@@ -21,18 +23,27 @@ import java.util.concurrent.TimeUnit;
 
 public class SignInActivity extends AppCompatActivity {
 
+    FirebaseAuth auth;
+    @Override
+    public void onStart() {
+        super.onStart();
+        auth=FirebaseAuth.getInstance();
+        FirebaseUser currentUser = auth.getCurrentUser();
+        if(currentUser!=null){
+            Intent i=new Intent(this,MainActivity2.class);
+            startActivity(i);
+        }
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
-
         getSupportActionBar().hide();
         final EditText mobileN = findViewById(R.id.signUpMobileNumber);
         final AppCompatButton continueButton = findViewById(R.id.signUpContinue);
         final TextView signInButton  = findViewById(R.id.SignUpSignInButton);
         final ImageView back_arrow = findViewById(R.id.sign_in_back);
         final ProgressBar progressBar = findViewById(R.id.signUpProgressbar);
-
         continueButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

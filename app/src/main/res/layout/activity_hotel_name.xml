@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_back_dark_blue1"
+        android:orientation="vertical"
+        tools:context=".hotel_name">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            cardCornerRadius="12dp"
+            android:elevation="10dp">
+            <ImageView
+                android:id="@+id/hotel_images"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:text="Hotel Name"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="About Some details of hotelbjjkc,ncadscavhk kghb  ihkj,m ukhb,n hu mbuj j bhguhn jbn j njbn jhjhvb fvfv Starting from Price"
+            android:textAlignment="center"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Starting from Price"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:text="View"
+            android:textAlignment="center"
+            android:backgroundTint="#FE266F"
+
+            />
+</LinearLayout>

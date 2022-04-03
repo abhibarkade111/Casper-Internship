@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="30dp"
+            >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_back_dark_blue1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Property Policy"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:id="@+id/property"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-Guests are required to pay a 21% advance at the time of booking itself.\n-We strictly DO NOT allow a group of more than 8 people. In case of a group of 4 or more, you might be purposefully allotted different dorm rooms. Further, if the group behaviour is deemed unfit at the property, the sequoia pink stays Property Manager, upon subjective evaluation, retains the full right to take required action which may also result in an on-spot cancellation without refunds.\n-Children below 18 years of age are not permitted entry/stay at any of our hostels, with or without guardians. We do not recommend families.\n-Our standard check-in time is 12 PM and the standard check-out time is 10 AM\n-We only accept a government ID as valid identification proof. No local IDs shall be accepted at the time of check-in\n-Guests are not permitted to bring outsiders inside the hostel campus.\n-We believe in self-help and do not provide luggage assistance or room services.\n-Drugs and any substance abuse is strictly banned inside and around the property.\n-Alcohol consumption is strictly prohibited in and around the property premises.\n-Right to admission reserved.\nImportant Note: According to the rules laid down by the City police, local vehicles are not permitted to park within the hostel premises. This includes vehicles with number plates starting with city and taxi passing vehicles (white letters on yellow plate). However, self-driven vehicles (yellow letters on black plate) are permitted to park.\n"
+                    android:justificationMode="inter_word"
+                    android:textColor="@color/black"
+                    app:layout_constraintTop_toBottomOf="@+id/property"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

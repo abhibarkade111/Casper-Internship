@@ -64,18 +64,22 @@
         <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/therapist_list.xml" value="0.13020833333333334" />
         <entry key="..\:/Android Development/ARTCasper/app/src/main/res/layout/viewholder_cat.xml" value="0.536" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/drawable-v24/background.xml" value="0.2203125" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/drawable/round_back_primary_2.xml" value="0.2203125" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/layout/activity_art_kit.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/layout/activity_book_room.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/layout/activity_book_therapist.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/layout/activity_booking.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/layout/activity_category_private.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/layout/activity_category_public.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/layout/activity_cust_register.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/layout/activity_dialog.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/layout/activity_emergency_contact.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/layout/activity_feedback.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/layout/activity_feedback_form.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/layout/activity_find_near_toilet.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/layout/activity_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/layout/activity_homepa.xml" value="0.2" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/layout/activity_homepage.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/layout/activity_institute_report.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/layout/activity_institutional_bus.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/layout/activity_lead_campus_program.xml" value="0.20416666666666666" />
@@ -95,6 +99,7 @@
         <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/layout/activity_rewards_scratch.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/layout/activity_room.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/layout/activity_room_booking.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/layout/activity_rooms.xml" value="0.1" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/layout/activity_safe_school_program.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/layout/activity_scan.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/layout/activity_scan_qr_code.xml" value="0.20416666666666666" />
@@ -105,11 +110,15 @@
         <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/layout/activity_upload_location.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/layout/activity_vehicle.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/layout/bookroom_activity.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/layout/cancellation_policy.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/layout/city_card_list.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/layout/content_map.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/layout/hotel_card_list.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/layout/list_hotel.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/layout/prompt.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/layout/ratingbar_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/layout/review_card.xml" value="0.2" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/layout/room_card.xml" value="0.18611111111111112" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/layout/therapist_list.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Casper-Internship/app/src/main/res/layout/vehicle_img.xml" value="0.20416666666666666" />
       </map>
