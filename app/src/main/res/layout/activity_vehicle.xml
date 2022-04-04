@@ -125,7 +125,6 @@
                             <de.hdodenhof.circleimageview.CircleImageView
                                 android:layout_width="50dp"
                                 android:layout_height="50dp"
-                                android:src="@drawable/bike"
                                 map:civ_border_color="@color/black"
                                 map:civ_border_width="1dp" />
 

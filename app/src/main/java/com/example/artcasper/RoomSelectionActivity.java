@@ -41,8 +41,7 @@ public class RoomSelectionActivity extends AppCompatActivity {
         startdate=findViewById(R.id.start_date_selected);
         enddate=findViewById(R.id.end_date_selected);
 
-        startdate.setText(start);
-        enddate.setText(end);
+    
 
         covidbutton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -85,8 +84,8 @@ public class RoomSelectionActivity extends AppCompatActivity {
         RecyclerView recyclerView = findViewById(R.id.room_recycler_view);
         LinearLayoutManager linearLayoutManager =  new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(linearLayoutManager);
-        String[] strings={"Deluxe Twin Bed Private Room (ensuite)","8 Bed Mixed Dorm (Shared Washroom","Deluxe Private Room (ensuite)","10 Bed Mixed Dorm (Shared Washroom)"};
-        RoomAdapter adapter=new RoomAdapter(strings);
+        AddRoomTypeToRecyclerViewArrayList();
+        RoomAdapter adapter=new RoomAdapter(roomData);
         recyclerView.setAdapter(adapter);
 
     }

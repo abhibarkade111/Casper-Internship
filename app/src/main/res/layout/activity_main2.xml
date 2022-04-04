@@ -20,8 +20,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingBottom="90dp">
+            android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -170,8 +169,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
                 android:layout_marginTop="10dp"
                 android:padding="10dp"
                 android:gravity="center">
@@ -204,10 +201,11 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="5dp"
                         android:paddingEnd="5dp"
-                        android:text="Stays"
+                        android:text="Sequoia Pink\nStays"
                         android:textColor="#6e6e70"
                         android:textSize="16sp"
                         android:textStyle="bold"
+                        android:textAlignment="center"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -241,10 +239,11 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="5dp"
                         android:paddingEnd="5dp"
-                        android:text="Star rated loos"
+                        android:text="Sequoia Pink\nStar rated loos"
                         android:textColor="#6e6e70"
                         android:textSize="16sp"
                         android:textStyle="bold"
+                        android:textAlignment="center"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"

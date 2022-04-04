@@ -1,5 +1,6 @@
 package com.example.artcasper;
 
+import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,11 +11,14 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.List;
+
 public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.RoomViewHolder> {
 
-    private String[] data;
-    public RoomAdapter(String[] datalist){
+    private List<RoomData> data;
+    public RoomAdapter(List<RoomData> datalist){
         this.data=datalist;
+
     }
     @NonNull
     @Override
@@ -26,20 +30,23 @@ public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.RoomViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull RoomViewHolder holder, int position) {
-        holder.getTextView().setText(data[position]);
+        RoomData roomData = data.get(position);
+        holder.textView.setText(roomData.getRoomType());
+        holder.textView2.setText(roomData.getRoomDetail());
     }
 
     @Override
     public int getItemCount() {
-        return data.length;
+        return data == null? 0:data.size();
     }
 
     public class RoomViewHolder extends RecyclerView.ViewHolder{
-        TextView textView;
+        TextView textView, textView2;
         Button btn;
         public RoomViewHolder(@NonNull View itemview){
             super(itemview);
             textView= itemview.findViewById(R.id.room_type);
+            textView2=itemview.findViewById(R.id.room_type_detail);
             btn=itemview.findViewById(R.id.room_book_);
             btn.setOnClickListener(new View.OnClickListener() {
                 @Override

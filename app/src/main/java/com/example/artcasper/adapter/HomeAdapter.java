@@ -1,6 +1,7 @@
 package com.example.artcasper.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,8 +10,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.artcasper.Hotels;
 import com.example.artcasper.R;
 import com.example.artcasper.data.HomeData;
 
@@ -48,11 +51,21 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.HomeViewHolder
     public class HomeViewHolder extends RecyclerView.ViewHolder{
         TextView text;
         ImageView image;
+        CardView cardView;
 
         public HomeViewHolder(@NonNull View itemView) {
             super(itemView);
             text=itemView.findViewById(R.id.city);
             image=itemView.findViewById(R.id.city_image);
+            cardView=itemView.findViewById(R.id.destination_card);
+            cardView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent= new Intent(view.getContext(), Hotels.class);
+                    view.getContext().startActivity(intent);
+                }
+            });
+
         }
     }
 }
