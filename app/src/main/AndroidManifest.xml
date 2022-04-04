@@ -17,7 +17,11 @@
         <activity
             android:name=".SignInActivity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".Register"
@@ -30,7 +34,8 @@
             />
         <activity
             android:name=".CustomerRegisteration"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName=".RoomSelectionActivity"/>
         <activity
             android:name=".hotel_name"
             android:exported="true" />
@@ -40,11 +45,6 @@
         <activity
             android:name=".MainActivity2"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".SafeSchoolProgramActivity"

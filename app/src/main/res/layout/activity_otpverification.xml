@@ -10,7 +10,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/otp_background"
+        android:src="@drawable/otp_back"
         android:adjustViewBounds="true"/>
 
     <TextView
