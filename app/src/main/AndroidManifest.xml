@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ARTCasper">
         <activity
-            android:name=".SignInActivity"
+            android:name=".MainActivity2"
             android:exported="true">
 
         </activity>
@@ -30,7 +30,8 @@
             />
         <activity
             android:name=".CustomerRegisteration"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName=".RoomSelectionActivity"/>
         <activity
             android:name=".hotel_name"
             android:exported="true" />
@@ -38,7 +39,7 @@
             android:name=".OTPVerification"
             android:exported="true" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".SignInActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -160,15 +161,6 @@
         <activity
             android:name=".SOSelectionActivity"
             android:exported="true" />
-        <activity
-            android:name=".activities.SplashActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity android:name=".activities.BookingActivity" />
         <activity android:name=".activities.VehicleActivity" />
     </application>
