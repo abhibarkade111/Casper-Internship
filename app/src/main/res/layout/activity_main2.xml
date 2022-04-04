@@ -103,10 +103,10 @@
 
                     <ImageView
                         android:id="@+id/imageView4"
-                        android:layout_width="155dp"
-                        android:layout_height="129dp"
+                        android:layout_width="140dp"
+                        android:layout_height="120dp"
                         android:layout_marginBottom="8dp"
-                        android:src="@drawable/mainpageimg"
+                        android:src="@drawable/mainpage"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent" />
 
@@ -182,8 +182,8 @@
                     >
                     <ImageView
                         android:id="@+id/sqpimage"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginEnd="10dp"
@@ -220,8 +220,8 @@
                     >
                     <ImageView
                         android:id="@+id/artimage"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginEnd="10dp"
