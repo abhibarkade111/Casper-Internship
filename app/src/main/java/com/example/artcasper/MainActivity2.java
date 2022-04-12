@@ -13,7 +13,7 @@ import com.example.artcasper.activities.VehicleActivity;
 public class MainActivity2 extends AppCompatActivity {
 
     ImageView profile;
-    ConstraintLayout art,travel;
+    ConstraintLayout art,travel,hygine,health,shopping;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,11 +21,33 @@ public class MainActivity2 extends AppCompatActivity {
 
         art=findViewById(R.id.art_main);
         travel=findViewById(R.id.sqp_main);
+        hygine=findViewById(R.id.sqh_main);
+        health= findViewById(R.id.sqhealth_main);
+        shopping=findViewById(R.id.sql_main);
 
         art.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity2.this,MainActivity.class));
+            }
+        });
+
+        hygine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //startActivity(new Intent(MainActivity2.this,MainActivity.class));
+            }
+        });
+        health.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //startActivity(new Intent(MainActivity2.this,MainActivity.class));
+            }
+        });
+        shopping.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //startActivity(new Intent(MainActivity2.this,MainActivity.class));
             }
         });
 
