@@ -47,7 +47,7 @@ public class MainActivity2 extends AppCompatActivity {
         shopping.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //startActivity(new Intent(MainActivity2.this,MainActivity.class));
+                startActivity(new Intent(getApplicationContext(),LifestyleShoppingActivity.class));
             }
         });
 
