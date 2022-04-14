@@ -35,13 +35,13 @@ public class MainActivity2 extends AppCompatActivity {
         hygine.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //startActivity(new Intent(MainActivity2.this,MainActivity.class));
+                startActivity(new Intent(MainActivity2.this,hygine.class));
             }
         });
         health.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //startActivity(new Intent(MainActivity2.this,MainActivity.class));
+                startActivity(new Intent(MainActivity2.this,SP_Food.class));
             }
         });
         shopping.setOnClickListener(new View.OnClickListener() {

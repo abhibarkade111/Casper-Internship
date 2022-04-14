@@ -15,9 +15,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ARTCasper">
         <activity
+            android:name=".SP_Food"
+            android:exported="false"
+            android:label="Sequoia Pink Health"
+            android:parentActivityName=".MainActivity2"/>
+
+        <activity
+            android:name=".hygine"
+            android:exported="false"
+            android:label="Sequoia Pink Hygiene"
+            android:parentActivityName=".MainActivity2"/>
+
+        <activity
             android:name=".LifestyleShoppingActivity"
             android:exported="false"
-            android:label="Sequoia Pink Lifestyle"/>
+            android:label="Sequoia Pink Lifestyle"
+            android:parentActivityName=".MainActivity2"/>
         <activity
             android:name=".MainActivity2"
             android:exported="true">
@@ -47,8 +60,7 @@
             android:exported="true" />
         <activity
             android:name=".SignInActivity"
-            android:exported="true"></activity>
-
+            android:exported="true" />
         <activity
             android:name=".SafeSchoolProgramActivity"
             android:exported="true"
@@ -155,7 +167,7 @@
         <activity
             android:name=".Online_payment"
             android:exported="true"
-            android:parentActivityName=".MainActivity2"></activity>
+            android:parentActivityName=".MainActivity2" />
         <activity
             android:name=".SOSelectionActivity"
             android:exported="true" />
