@@ -6,8 +6,12 @@ import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.artcasper.adapter.SubCategoryAdapter;
+import com.example.artcasper.data.HomeData;
 
 import java.util.ArrayList;
 
@@ -16,6 +20,7 @@ public class hygine extends AppCompatActivity {
     LinearLayoutManager HorizontalLayout;
     LinearLayout pic1, pic2, pic3, pic4,pic5, pic6, pic7, pic8,pic9,pic10;
     ArrayList<com.example.artcasper.product> productinfoArrayList;
+    ArrayList<HomeData> period;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,76 +41,104 @@ public class hygine extends AppCompatActivity {
         pic1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ArrayList<product> productinfoArrayList = new ArrayList<>();
-                builder = new AlertDialog.Builder(hygine.this);
-                //    private DBHelper dbHelper;
-                productinfoArrayList = initprod1();
-                productInfoRecyclerAdapter productArrayList = new productInfoRecyclerAdapter(productinfoArrayList, hygine.this);
+                periodItems1();
                 RecyclerView recyclerView = findViewById(R.id.prod);
-                LinearLayoutManager linearLayoutManager = new LinearLayoutManager(hygine.this, RecyclerView.VERTICAL, false);
+                GridLayoutManager linearLayoutManager = new GridLayoutManager(getApplicationContext(), 2);
                 recyclerView.setLayoutManager(linearLayoutManager);
-                recyclerView.setAdapter(productArrayList);
+                SubCategoryAdapter adapter = new SubCategoryAdapter(period, getApplicationContext());
+                recyclerView.setAdapter(adapter);
             }
         });
 
         pic2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ArrayList<product> productinfoArrayList = new ArrayList<>();
-                builder = new AlertDialog.Builder(hygine.this);
-                //    private DBHelper dbHelper;
-                productinfoArrayList = initprod2();
-                productInfoRecyclerAdapter productArrayList = new productInfoRecyclerAdapter(productinfoArrayList, hygine.this);
+                shaveItems1();
                 RecyclerView recyclerView = findViewById(R.id.prod);
-                LinearLayoutManager linearLayoutManager = new LinearLayoutManager(hygine.this, RecyclerView.VERTICAL, false);
+                GridLayoutManager linearLayoutManager = new GridLayoutManager(getApplicationContext(), 2);
                 recyclerView.setLayoutManager(linearLayoutManager);
-                recyclerView.setAdapter(productArrayList);
+                SubCategoryAdapter adapter = new SubCategoryAdapter(period, getApplicationContext());
+                recyclerView.setAdapter(adapter);
 
             }
         });
         pic3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ArrayList<product> productinfoArrayList = new ArrayList<>();
-                builder = new AlertDialog.Builder(hygine.this);
-                //    private DBHelper dbHelper;
-                productinfoArrayList = initprod3();
-                productInfoRecyclerAdapter productArrayList = new productInfoRecyclerAdapter(productinfoArrayList, hygine.this);
+                periodItems1();
                 RecyclerView recyclerView = findViewById(R.id.prod);
-                LinearLayoutManager linearLayoutManager = new LinearLayoutManager(hygine.this, RecyclerView.VERTICAL, false);
+                GridLayoutManager linearLayoutManager = new GridLayoutManager(getApplicationContext(), 2);
                 recyclerView.setLayoutManager(linearLayoutManager);
-                recyclerView.setAdapter(productArrayList);
+                SubCategoryAdapter adapter = new SubCategoryAdapter(period, getApplicationContext());
+                recyclerView.setAdapter(adapter);
 
             }
         });
         pic4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ArrayList<product> productinfoArrayList = new ArrayList<>();
-                builder = new AlertDialog.Builder(hygine.this);
-                //    private DBHelper dbHelper;
-                productinfoArrayList = initprod4();
-                productInfoRecyclerAdapter productArrayList = new productInfoRecyclerAdapter(productinfoArrayList, hygine.this);
+                shaveItems1();
                 RecyclerView recyclerView = findViewById(R.id.prod);
-                LinearLayoutManager linearLayoutManager = new LinearLayoutManager(hygine.this, RecyclerView.VERTICAL, false);
+                GridLayoutManager linearLayoutManager = new GridLayoutManager(getApplicationContext(), 2);
                 recyclerView.setLayoutManager(linearLayoutManager);
-                recyclerView.setAdapter(productArrayList);
-
+                SubCategoryAdapter adapter = new SubCategoryAdapter(period, getApplicationContext());
+                recyclerView.setAdapter(adapter);
             }
         });
         pic5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ArrayList<product> productinfoArrayList = new ArrayList<>();
-                builder = new AlertDialog.Builder(hygine.this);
-                //    private DBHelper dbHelper;
-                productinfoArrayList = initprod5();
-                productInfoRecyclerAdapter productArrayList = new productInfoRecyclerAdapter(productinfoArrayList, hygine.this);
+                periodItems1();
                 RecyclerView recyclerView = findViewById(R.id.prod);
-                LinearLayoutManager linearLayoutManager = new LinearLayoutManager(hygine.this, RecyclerView.VERTICAL, false);
+                GridLayoutManager linearLayoutManager = new GridLayoutManager(getApplicationContext(), 2);
                 recyclerView.setLayoutManager(linearLayoutManager);
-                recyclerView.setAdapter(productArrayList);
+                SubCategoryAdapter adapter = new SubCategoryAdapter(period, getApplicationContext());
+                recyclerView.setAdapter(adapter);
 
+            }
+        });
+        pic6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                shaveItems1();
+                RecyclerView recyclerView = findViewById(R.id.prod);
+                GridLayoutManager linearLayoutManager = new GridLayoutManager(getApplicationContext(), 2);
+                recyclerView.setLayoutManager(linearLayoutManager);
+                SubCategoryAdapter adapter = new SubCategoryAdapter(period, getApplicationContext());
+                recyclerView.setAdapter(adapter);
+            }
+        });
+        pic7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                periodItems1();
+                RecyclerView recyclerView = findViewById(R.id.prod);
+                GridLayoutManager linearLayoutManager = new GridLayoutManager(getApplicationContext(), 2);
+                recyclerView.setLayoutManager(linearLayoutManager);
+                SubCategoryAdapter adapter = new SubCategoryAdapter(period, getApplicationContext());
+                recyclerView.setAdapter(adapter);
+            }
+        });
+        pic8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                shaveItems1();
+                RecyclerView recyclerView = findViewById(R.id.prod);
+                GridLayoutManager linearLayoutManager = new GridLayoutManager(getApplicationContext(), 2);
+                recyclerView.setLayoutManager(linearLayoutManager);
+                SubCategoryAdapter adapter = new SubCategoryAdapter(period, getApplicationContext());
+                recyclerView.setAdapter(adapter);
+            }
+        });
+        pic9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                periodItems1();
+                RecyclerView recyclerView = findViewById(R.id.prod);
+                GridLayoutManager linearLayoutManager = new GridLayoutManager(getApplicationContext(), 2);
+                recyclerView.setLayoutManager(linearLayoutManager);
+                SubCategoryAdapter adapter = new SubCategoryAdapter(period, getApplicationContext());
+                recyclerView.setAdapter(adapter);
             }
         });
     }
@@ -148,6 +181,26 @@ public class hygine extends AppCompatActivity {
         list.add(new product("3999","PEE SAFE","Toilet Seat Sanitizer 300 ml (Mint)"));
         list.add(new product("3999","PEE SAFE","Toilet Seat Sanitizer 300 ml (Mint)"));
         return list;
+    }
+    public void periodItems1(){
+        // Adding items to ArrayList
+        period = new ArrayList<>();
+        period.add(new HomeData(R.drawable.mensuralcup, "Reusable menstrual cup - L"));
+        period.add(new HomeData(R.drawable.mensuralcup,"Reusable menstrual cup - M"));
+        period.add(new HomeData(R.drawable.mensuralcup,"Reusable menstrual cup - S"));
+        period.add(new HomeData(R.drawable.mensuralcup,"Reusable menstrual cup - L"));
+        period.add(new HomeData(R.drawable.mensuralcup,"Reusable menstrual cup - M"));
+        period.add(new HomeData(R.drawable.mensuralcup,"Reusable menstrual cup - S"));
+    }
+    public void shaveItems1(){
+        // Adding items to ArrayList
+        period = new ArrayList<>();
+        period.add(new HomeData(R.drawable.shavinggroming, "Body Razors Kit"));
+        period.add(new HomeData(R.drawable.shavinggroming,"Vitamin E Pad Equipped Body Razor"));
+        period.add(new HomeData(R.drawable.shavinggroming,"Face Razor"));
+        period.add(new HomeData(R.drawable.shavinggroming,"Body Razor Duo"));
+        period.add(new HomeData(R.drawable.shavinggroming,"Complete Hair Removal Pack"));
+        period.add(new HomeData(R.drawable.shavinggroming,"Advanced Nano Coated Face Razor"));
     }
 
 

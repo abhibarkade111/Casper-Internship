@@ -34,7 +34,7 @@
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/hygiene" />
+                        android:src="@drawable/periodcare" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -57,7 +57,7 @@
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/hygiene" />
+                        android:src="@drawable/toiletseat" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -80,7 +80,7 @@
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/hygiene" />
+                        android:src="@drawable/facecare" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -103,7 +103,7 @@
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/hygiene" />
+                        android:src="@drawable/bodycare" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -125,7 +125,7 @@
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/hygiene" />
+                        android:src="@drawable/shavinggroming" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -147,7 +147,7 @@
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/hygiene" />
+                        android:src="@drawable/haircare" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -169,7 +169,7 @@
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/hygiene" />
+                        android:src="@drawable/intimatecare" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -191,7 +191,7 @@
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/hygiene" />
+                        android:src="@drawable/maternitycare" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -213,7 +213,7 @@
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/hygiene" />
+                        android:src="@drawable/outdoorwellness" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -235,7 +235,7 @@
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/hygiene" />
+                        android:src="@drawable/sexuallwellness" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -268,7 +268,7 @@
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/prod"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"/>
 
             </androidx.cardview.widget.CardView>
         </LinearLayout>
