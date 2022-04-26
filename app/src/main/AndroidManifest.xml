@@ -15,23 +15,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ARTCasper">
         <activity
-            android:name=".SP_Food"
-            android:exported="false"
-            android:label="Sequoia Pink Health"
-            android:parentActivityName=".MainActivity2"/>
-
-        <activity
-            android:name=".hygine"
-            android:exported="false"
-            android:label="Sequoia Pink Hygiene"
-            android:parentActivityName=".MainActivity2"/>
-
-        <activity
-            android:name=".LifestyleShoppingActivity"
-            android:exported="false"
-            android:label="Sequoia Pink Lifestyle"
-            android:parentActivityName=".MainActivity2"/>
-        <activity
             android:name=".MainActivity2"
             android:exported="true">
             <intent-filter>
@@ -42,27 +25,31 @@
         </activity>
         <activity
             android:name=".Register"
-            android:exported="true"
-            android:label="Register"
-            />
+            android:exported="true" ></activity>
         <activity
             android:name=".Hotels"
             android:exported="true"
+            android:parentActivityName=".HomeActivity"
             android:label="Select Hotel"
-            android:parentActivityName=".HomeActivity" />
+            />
         <activity
             android:name=".CustomerRegisteration"
             android:exported="true"
-            android:parentActivityName=".RoomSelectionActivity" />
+            android:parentActivityName=".RoomSelectionActivity"/>
         <activity
             android:name=".hotel_name"
             android:exported="true" />
+        <activity
+            android:name=".hygine"
+            android:exported="true"
+            android:parentActivityName=".MainActivity2"/>
         <activity
             android:name=".OTPVerification"
             android:exported="true" />
         <activity
             android:name=".SignInActivity"
-            android:exported="true" />
+            android:exported="true">
+        </activity>
         <activity
             android:name=".SafeSchoolProgramActivity"
             android:exported="true"
@@ -92,20 +79,23 @@
             android:name=".ScanQrCodeActivity"
             android:exported="true"
             android:label="Scan QR" />
+
         <activity
             android:name=".HomeActivity"
             android:exported="true"
+            android:parentActivityName=".MainActivity2"
             android:label="Sequoia Pink Stays"
-            android:parentActivityName=".MainActivity2" />
+        />
         <activity
             android:name=".RoomSelectionActivity"
             android:exported="true"
-            android:parentActivityName=".Hotels" />
+            android:parentActivityName=".Hotels"
+            />
         <activity
             android:name=".Profile"
             android:exported="true"
-            android:label="Profile"
-            android:parentActivityName=".MainActivity2" />
+            android:parentActivityName=".MainActivity2"
+            android:label="Profile" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -126,7 +116,7 @@
         <activity
             android:name=".Rewards_Scratch"
             android:exported="true"
-            android:parentActivityName=".MainActivity2" />
+            android:parentActivityName=".MainActivity2"/>
         <activity
             android:name=".Number"
             android:exported="true" />
@@ -169,7 +159,8 @@
         <activity
             android:name=".Online_payment"
             android:exported="true"
-            android:parentActivityName=".MainActivity2" />
+            android:parentActivityName=".MainActivity2">
+        </activity>
         <activity
             android:name=".SOSelectionActivity"
             android:exported="true" />
