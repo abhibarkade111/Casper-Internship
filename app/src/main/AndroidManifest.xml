@@ -21,7 +21,6 @@
         <activity
             android:name=".Register"
             android:exported="true" >
-
         </activity>
         <activity
             android:name=".Hotels"
@@ -88,6 +87,18 @@
             android:parentActivityName=".MainActivity2"
             android:label="Sequoia Pink Stays"
         />
+        <activity
+            android:name=".SP_Food"
+            android:exported="true"
+            android:parentActivityName=".MainActivity2"
+            android:label="Sequoia Pink Food"
+            />
+        <activity
+            android:name=".LifestyleShoppingActivity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity2"
+            android:label="Sequoia Pink Stays"
+            />
         <activity
             android:name=".RoomSelectionActivity"
             android:exported="true"
